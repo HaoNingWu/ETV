@@ -1,4 +1,4 @@
-ETV is a Github repository that provides MATLAB demos of two algorithms described in the paper "Enhanced total variation minimization for stable image reconstruction" by Congpei An, Hao-Ning Wu, and Xiaoming Yuan. The software demonstrates Algorithm 1 for image denoising and Algorithm 2 for image reconstruction in this paper, can be accessed at this [link](https://iopscience.iop.org/article/10.1088/1361-6420/acd4e1).
+ETV is a Github repository that provides MATLAB demos of two algorithms described in the paper "Enhanced total variation minimization for stable image reconstruction" by Congpei An, Hao-Ning Wu, and Xiaoming Yuan. The software demonstrates Algorithm 1 for image denoising and Algorithm 2 for image reconstruction in this paper, which can be accessed at this [link](https://iopscience.iop.org/article/10.1088/1361-6420/acd4e1).
 
 # Demo 1: Image Denoising
 The demo_denoising.m script reproduces Figure 1 from the paper, showcasing the denoising capability of the enhanced TV model. It utilizes two functions:
