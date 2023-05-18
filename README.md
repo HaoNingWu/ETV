@@ -15,4 +15,4 @@ Four functions are involved in the reconstruction demos:
 * MRIETVisotropic.m: This function solves the isotropic enhanced TV reconstruction model using the DCA+ADMM approach.
 
 # Handling Noisy Measurements
-In situations where the measurements are noisy, with a noise level denoted as $\tau$, our Algorithm 2 requires a projection onto a ball centered at 0 with a radius of $\tau$. To implement this projection, the function project_L2.m from The Proximity Operator Repository needs to be utilized.
+In situations where the measurements are noisy, with a noise level denoted as $\tau$, our Algorithm 2 requires a projection onto a ball centered at 0 with a radius of $\tau$. To implement this projection, the function project_L2.m from [The Proximity Operator Repository](http://proximity-operator.net/index.html) needs to be utilized.
