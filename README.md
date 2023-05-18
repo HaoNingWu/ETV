@@ -1,31 +1,18 @@
-# ETV
-This is a collection of two MATLAB demos of Algorithms 1 (image denoising) and 2 (image reconstruction) in our paper [Enhanced total variation minimization for stable image reconstruction](https://iopscience.iop.org/article/10.1088/1361-6420/acd4e1) by Congpei An, Hao-Ning Wu, and Xiaoming Yuan.
+ETV is a Github repository that provides MATLAB demos of two algorithms described in the paper "Enhanced total variation minimization for stable image reconstruction" by Congpei An, Hao-Ning Wu, and Xiaoming Yuan. The software demonstrates Algorithm 1 for image denoising and Algorithm 2 for image reconstruction in this paper, can be accessed at this [link](https://iopscience.iop.org/article/10.1088/1361-6420/acd4e1).
 
-# Demo 1: Image denoising
-The demo, demo_denoising.m, reproduces Figure 1 in our paper, examining the denoising ability of the enhanced TV model. 
+# Demo 1: Image Denoising
+The demo_denoising.m script reproduces Figure 1 from the paper, showcasing the denoising capability of the enhanced TV model. It utilizes two functions:
+* denoiseTV.m: This function solves the TV denoising model using the split Bregman method.
+* denoiseETV.m: This function solves the enhanced TV denoising model using the DCA+ADMM approach (Algorithm 1 in the paper).
 
-Two functions are involved: 
+# Demo 2: Image Reconstruction
+The demo_reconstruction.m script reproduces the third column of Figure 5 in the paper, illustrating the reconstruction capability of the enhanced TV model. Additionally, a lightweight version of the demo, demo_reconstruction_lightweight.m, is provided, which focuses on reconstructing a 64-by-64 image.
 
-denoiseTV.m: Solving the TV denoising model by the split Bregman
+Four functions are involved in the reconstruction demos:
+* MRITV.m: This function solves the TV reconstruction model using the split Bregman method.
+* MRIL12.m: This function solves the weighted anisotropic and isotropic TV reconstruction model using the DCA+split Bregman approach.
+* MRIETV.m: This function solves the anisotropic enhanced TV reconstruction model using the DCA+ADMM approach (Algorithm 2 in the paper).
+* MRIETVisotropic.m: This function solves the isotropic enhanced TV reconstruction model using the DCA+ADMM approach.
 
-denoiseETV.m: Solving the enhanced TV denoising model by DCA+ADMM (Algorithm 1 in our paper)
-
-# Demo 2: Image reconstruction
-The demo, demo_reconstruction.m, reproduces the third column of Figure 5 in our paper, showing the reconstruction ability of the enhanced TV model. 
-
-A lightweight demo, demo_reconstruction_lightweight.m, is also provided, which only reconstructs a 64-by-64 image.
-
-Four functions are involved:
-
-MRITV.m: Solving the TV reconstruction model by the split Bregman
-
-MRIL12.m: Solving the weighted anisotropic and isotropic TV reconstruction model by DCA+split Bregman
-
-MRIETV.m: Solving the anisotropic enhanced TV reconstruction model by DCA+ADMM (Algorithm 2 in our paper)
-
-MRIETVisotropic.m: Solving the isotropic enhanced TV reconstruction model by DCA+ADMM
-
-# When the measurements are noisy...
-If the measurements are noisy with noise level $\tau$, our Algorithm 2 requires a projection onto the ball centered at 0 with radius $\tau$. 
-
-To implement such a projection, the function project_L2.m in [The Proximity Operator Repository](http://proximity-operator.net/) is needed.
+# Handling Noisy Measurements
+In situations where the measurements are noisy, with a noise level denoted as $\tau$, our Algorithm 2 requires a projection onto a ball centered at 0 with a radius of $\tau$. To implement this projection, the function project_L2.m from The Proximity Operator Repository needs to be utilized.
