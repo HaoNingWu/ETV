@@ -1,5 +1,5 @@
 # ETV
-This is a collection of two MATLAB demos of Algorithms 1 (image denoising) and 2 (image reconstruction) in the paper "Enhanced total variation minimization for stable image reconstruction" by Congpei An, Hao-Ning Wu, and Xiaoming Yuan.
+This is a collection of two MATLAB demos of Algorithms 1 (image denoising) and 2 (image reconstruction) in the paper [Enhanced total variation minimization for stable image reconstruction](https://iopscience.iop.org/article/10.1088/1361-6420/acd4e1) by Congpei An, Hao-Ning Wu, and Xiaoming Yuan.
 
 # Demo 1: Image denoising
 The demo, demo_denoising.m, reproduces Figure 1 in our paper, examining the denoising ability of the enhanced TV model. 
